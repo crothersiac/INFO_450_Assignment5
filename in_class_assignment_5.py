@@ -60,12 +60,13 @@ def main():
     print("\nThe text file 'numbers' is going to be processed and sorted.")
    #Read in the numbers.txt file to begin the function, takes in numbers corectly, but doesn't sort properly
     import re
-    numbers = []
+    number = []
     with open("numbers.txt") as file:
         for line in file:
             for i in re.findall(r'\d+(?:\.\d+)?', line):
-                numbers.append(i)
-    list(map(int, numbers))   
+                number.append(i)
+    list(map(int, number))  
+    numbers = [int(x) for x in number]
     
         
     #TEST VALUES - Returns values as intended, works fine
