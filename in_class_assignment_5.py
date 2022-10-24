@@ -59,8 +59,23 @@ def quicksort(numbers, begin, final):
 def main():
     print("\nThe text file 'numbers' is going to be processed and sorted.")
    #Read in the numbers.txt file to begin the function
-                
-    numbers = [24,56,23,65,23,6,65,67,23,45,67,87,34,23,21,2,6564]#test
+    """ 
+   with open("numbers.txt") as file:
+        rough_numbers = []
+        for number in file:
+            rough_numbers.append(number)
+        numbers=''
+        for i in rough_numbers:
+            if i =='[' or i == ',' or i == ']':
+                continue
+            else:
+                numbers += i
+            list(numbers)
+        #numbers = [eval(i) for i in number]
+        print(numbers)
+        """
+    #TEST VALUES
+    numbers = [449, 48, 242, 44, 65, 520, 332, 173, 931, 667, 146, 640, 448, 522, 820, 964, 688, 840, 113, 325, 950, 754, 999, 723, 909, 956, 255, 972, 111, 543, 282, 443, 362, 968, 725, 549, 356, 828, 566, 193, 107, 982, 580, 606, 882, 834, 236, 655, 604, 731, 321, 465, 814, 441, 460, 277, 29, 476, 126, 382, 101, 27, 135, 944, 307, 220, 51, 153, 536, 711, 901, 507, 139, 94, 155, 214, 724, 315, 33, 267, 782, 816, 75, 489, 835, 224, 532, 996, 573, 479, 729, 484, 505, 508, 875, 709, 589, 425, 454, 702]
     
     quicksort(numbers, 0, len(numbers)-1)
     print(numbers)
