@@ -59,18 +59,12 @@ def quicksort(numbers, begin, final):
 def main():
     print("\nThe text file 'numbers' is going to be processed and sorted.")
    #Read in the numbers.txt file to begin the function
-    with open("numbers.txt","r") as file:
-        y = file.read()
-        for i in y:
-                if i.isdigit() == True:
-                    print(i)
-                    
-    #numbers = rough_numbers.read()
-    
-    #numbers = [24,56,23,65,23,6,65,67,23,45,67,87,34,23,21,2,6564]#test
+                
+    numbers = [24,56,23,65,23,6,65,67,23,45,67,87,34,23,21,2,6564]#test
     
     quicksort(numbers, 0, len(numbers)-1)
     print(numbers)
+    print("\nProcessing.........")
 
     with open('sorted.txt', 'w') as f:
         for item in numbers:
