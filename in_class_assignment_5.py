@@ -85,11 +85,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-
-
-
-
-##### SOURCES:
-##### https://stackabuse.com/quicksort-in-python/
-##### https://stackoverflow.com/questions/28063270/how-do-i-extract-all-the-numbers-integers-from-a-text-file-using-python
